@@ -28,7 +28,7 @@ $comment=$pdosql->update($table,$column,$post);
     <li style="list-style:none;">
       <form action="./pupdate.com.php" method="post">
         <input type="hidden" name="id" value="<?=$post?>">
-      <textarea name="tweet" cols="40" rows="10" placeholder="<?=$comment['tweet']?>"></textarea>
+        <textarea name="tweet" cols="40" rows="10" ><?=$comment['tweet']?></textarea>
           <br> 
           <input type="submit" value="編集する">
       </form>

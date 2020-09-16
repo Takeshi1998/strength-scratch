@@ -28,7 +28,7 @@ if(!empty($_SESSION['id'])){
       
       // ログインユーザーのページング投稿取得
       
-      $stmt=$pdosql->person($table,$column,$id,$offset,$percomment);
+      $results=$pdosql->person($table,$column,$id,$offset,$percomment);
    
     } else{
       $msg="投稿はありません";
