@@ -9,7 +9,7 @@
   // DB接続
         function dbconnect(){
           try{
-         $db=new PDO('mysql:host=us-cdbr-east-02.cleardb.com;dbname=heroku_78c8926ce8bb3ba;charset=utf8;','b14cd205a2e012','10b9210d');
+            $db=new PDO('mysql:host=us-cdbr-east-02.cleardb.com;dbname=heroku_78c8926ce8bb3ba;charset=utf8;','b14cd205a2e012','10b9210d');
           $db->setAttribute(\PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
           return $db;
         }catch(PDOException $e){
