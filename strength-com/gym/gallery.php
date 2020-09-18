@@ -111,7 +111,7 @@ $db=null;
           </li> 
           <li> <?=nl2br(h($result['tweet']));?></li>
           <li style="display:flex; justify-content: space-between;">
-            <?=$result['zikan']?>
+            <?=day($result['zikan']);?>
             <form action="./pupdate.php" method="post">
               <input type="hidden" value="<?=$result['id']?>" name="id">
               <input type="submit" value="編集する">

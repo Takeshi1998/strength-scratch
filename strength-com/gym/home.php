@@ -84,7 +84,7 @@ $comment['zikan']=substr($comment['zikan'],0,16);
             <span id="pname">名前:<?=h($comment['name']);?></span>  
           </li> 
           <li> <?=nl2br(h($comment['tweet']));?></li>
-          <li > <?=$comment['zikan']?></li>
+          <li > <?=day($comment['zikan'])?></li>
 				</div>
 		<!-- line -->
 		<?php endforeach;?>
